@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>The Roost Café</h1>
+      <p>Enjoy the most delicious coffee made with real pigeon milk!</p>
+      <img
+        id="header-img"
+        src="images/logo.jpg"
+        alt="The Roost Café logo"
+        width="200"
+      />
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order-form">Place your order</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="menu">
+        <h2>Menu</h2>
+        <article>
+          <img src="images/gyroid-latte.jpg" alt="Gyroid Latte" width="150" />
+          <h3>Gyroid Latte</h3>
+          <p>
+            A creamy latte swirled with island spices and topped with a cinnamon
+            gyroid face. Guaranteed to make your heart do a happy dance!
+          </p>
+          <p>Price: $4.00</p>
+          <button class="order-button">Order Now</button>
+        </article>
+        <article>
+          <img
+            src="images/brewster-cookie.jpg"
+            alt="Brewster Cookie"
+            width="150"
+          />
+          <h3>Brewster Cookie</h3>
+          <p>
+            A delicious cookie made with Brewster's secret recipe. Perfectly
+            paired with coffee!
+          </p>
+          <p>Price: $2.50</p>
+          <button class="order-button">Order Now</button>
+        </article>
+        <article>
+          <img src="images/kk-cupcake.jpg" alt="K.K. Cupcake" width="150" />
+          <h3>K.K. Cupcake</h3>
+          <p>
+            A sweet treat inspired by K.K. Slider — rich chocolate with musical
+            notes sprinkled on top. Best enjoyed while listening to a smooth
+            track.
+          </p>
+          <p>Price: $3.25</p>
+          <button class="order-button">Order Now</button>
+        </article>
+        <article>
+          <img src="images/nook-toastie.jpg" alt="Nook's Toastie" width="150" />
+          <h3>Nook’s Toastie</h3>
+          <p>
+            A warm, grilled sandwich packed with forest mushrooms, cheese, and a
+            hint of thyme. A favorite of raccoons and villagers alike.
+          </p>
+          <p>Price: $5.00</p>
+          <button class="order-button">Order Now</button>
+        </article>
+      </section>
+      <section id="order-form">
+        <h3>Place Your Order</h3>
+        <form>
+          <label for="gyroid-qty">Gryoid Latte:</label>
+          <input
+            type="number"
+            id="gyroid-qty"
+            name="gyroid-qty"
+            min="0"
+            max="50"
+            value="0"
+          />
+          <p>Add-ons:</p>
+          <label
+            ><input type="checkbox" name="addons" value="extra-milk" /> Extra
+            pigeon milk</label
+          ><br />
+          <label
+            ><input type="checkbox" name="addons" value="whipped-cream" />
+            Whipped cream</label
+          ><br /><br />
+          <label for="brewster-qty">Brewster Cookie:</label>
+          <input
+            type="number"
+            id="brewster-qty"
+            name="brewster-qty"
+            min="0"
+            max="50"
+            value="0"
+          />
+          <br /><br />
+          <label for="kkcupcake-qty">K.K. Cupcake:</label>
+          <input
+            type="number"
+            id="kkcupcake-qty"
+            name="kkcupcake-qty"
+            min="0"
+            max="50"
+            value="0"
+          />
+          <p>Add-ons for K.K. Cupcake:</p>
+          <label
+            ><input type="checkbox" name="cupcake-addon" value="sprinkles" />
+            Extra sprinkles</label
+          ><br />
+          <label
+            ><input
+              type="checkbox"
+              name="cupcake-addon"
+              value="birthday-message"
+            />
+            Write a birthday message</label
+          >
+          <br /><br />
+          <label for="nooktoastie-qty">Nook's Toastie:</label>
+          <input
+            type="number"
+            id="nooktoastie-qty"
+            name="nooktoastie-qty"
+            min="0"
+            max="50"
+            value="0"
+          />
+          <p>Add-ons for Toastie:</p>
+          <label
+            ><input type="checkbox" name="toastie-addon" value="extra-cheese" />
+            Extra cheese</label
+          ><br />
+          <label
+            ><input type="checkbox" name="toastie-addon" value="gluten-free" />
+            Gluten-free bread</label
+          >
+          <br /><br />
+          <label for="special-requests">Special Requests:</label><br />
+          <textarea
+            id="special-requests"
+            name="special-requests"
+            rows="4"
+            cols="50"
+            placeholder="Any special requests or dietary restrictions?"
+          ></textarea>
+          <input type="submit" value="Go To Checkout" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Made with love byt camilladelgado</p>
+      <p>© 2025 The Roost Café</p>
+    </footer>
+  </body>
+</html>
