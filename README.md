@@ -9,6 +9,7 @@ This is my final project for Codédex — a cozy, Animal Crossing–inspired res
 - `restaurant_menu.html`
 - `images/` — contains logo and menu item visuals
 - styles.css (soon to be added)
+- README.md
 
 ## 🎨 Theme
 Inspired by Brewster’s café in Animal Crossing.
